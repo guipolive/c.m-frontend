@@ -1,0 +1,57 @@
+header {
+    
+    height: 50px;
+    width: 100%;
+    background: #703e156e;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.40); /* 0: quantos pixels pra direita, 1px: verticalmente, 3px: dissipação */
+    
+}
+
+.content { /* criado para deixar um width máximo, caso o monitor seja muito grande */
+    max-width: 1530px;
+    margin: 0 auto; 
+    /* padding: 0 30px; */
+}
+
+header .content {
+    height: 100%; /* ocupa toda a altura do header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .content ul{
+    
+    list-style: none; /* removendo o pontinho da lista */
+    display: flex;
+    
+}
+
+header .content ul li {
+    margin-left: 30px; /* os elementos da lista devem ter um espaçamento entre um e outro */
+}
+
+header .content ul li:first-child {
+    margin-left: 0; /* o primeiro elemento não deve ter espaçamento */
+}
+
+header .content div.search-bar input{
+    width: 340px;
+    border: 1px solid #e6ecf0;
+    height: 34px;
+    padding: 0 30px 0 12px; /* borda interna para o texto não ficar colado na lateral. o padding é maior na direita para não deixar passar por cima do ícone de pesquisa*/
+    border-radius: 16px;
+    color: #667581;
+    font-size: 12px;
+}
+
+.icones-header {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.icones-header:hover {
+    cursor: pointer;
+}
