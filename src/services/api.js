@@ -9,4 +9,4 @@ require('dotenv').config()
 */
 const api = axios.create({baseURL: process.env.REACT_APP_API_URL }); // aqui fica a conexão com o backend, e deve ficar o link para ele
 
-export default api; // usarmemos 'api' sempre que formos fazer conexão com a api
+export default api; // usaremos 'api' sempre que formos fazer conexão com a api
