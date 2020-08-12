@@ -52,7 +52,7 @@ export default class Index extends Component {
                         <article key={music._id}>
                             <strong>{music.name}</strong>
                             {/* <p>Música • {music.artist.name} • Álbum • 4:58</p> */}
-                            <p>Música • {music.artist.name}</p>
+                            <p>{music.artist.name} • Música • 5 Covers • #1 em Músicas</p>
 
                             <Link to={`/musics/${music.videoId}`} >Acessar</Link>
                         </article>
@@ -60,7 +60,13 @@ export default class Index extends Component {
 
                     <h2>Artistas</h2>
 
-                    <p className="em_dev">Em desenvolvimento</p>
+                    <article>
+                        <strong>O Terno</strong>
+                        {/* <p>Música • Artista • Álbum • 4:58</p> */}
+                        {/* <p>{music.artist.name} • Música</p> */}
+                        <p>Artista • 13 Covers • #20 Em artistas</p>
+                        <Link to={`/Artists/`} >Acessar</Link>
+                    </article>
 
                     <h2>Álbuns</h2>
 
