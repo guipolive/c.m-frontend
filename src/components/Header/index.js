@@ -17,7 +17,7 @@ export default class Header extends Component{
     }
 
     handleClickUser(){
-        console.log('teste');
+        // console.log('teste');
     }
     
     handleSearch(e){
@@ -38,7 +38,7 @@ export default class Header extends Component{
                         <ul>
                             <li><FiMenu/></li>
                             <li><Link to="/"><FiHome/></Link></li>
-                            <li>{this.state.search}</li>
+                            {/* <li>{this.state.search}</li> */}
                         </ul>
 
                         <div className="search-bar">
