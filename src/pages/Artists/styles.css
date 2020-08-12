@@ -1,0 +1,50 @@
+.artist-list{
+    max-width: 700px;
+    margin: 20px auto 0; /* 20 em cima, auto direita e esquerda, 0 em baixo */
+    padding: 0 20px;
+}
+
+.artist-list h2 {
+    margin-bottom: 20px;
+}
+
+.em_dev {
+    margin-bottom: 28px;
+}
+
+.artist-list article{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.artist-list article p{
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.artist-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #999;
+    background: none;
+    margin-top: 10px;
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.artist-list article a:hover{
+    color: #667581;
+    background: #dfd6cc;
+}
