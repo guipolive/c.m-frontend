@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 // importando as páginas da aplicação:
 import Index from './pages/Index';
 import Musics from './pages/Musics';
+import Artists from './pages/Artists';
 
 import Header from './components/Header';
 
@@ -17,8 +18,7 @@ export default function Routes(){
             <Switch> {/* faz com que apenas uma rota seja executada de cada vez */}
                 <Route exact path="/" component = {Index} />
                 <Route path="/musics/:music" component = {Musics} />
-
-                {/* <Route path="/entities/:id" component={Entity} /> */}
+                <Route path="/Artists" component = {Artists} />
             </Switch>
         </BrowserRouter>
     )
