@@ -5,20 +5,18 @@ header {
     background: #703e156e;
 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.40); /* 0: quantos pixels pra direita, 1px: verticalmente, 3px: dissipação */
-    
-    /* padding: 0 3em; */
 }
 
 .content { 
     /* criado para deixar um width máximo, caso o monitor seja muito grande */
     max-width: 1530px;
     margin: 0 auto; 
-    /* padding: 0 30px; */
 }
 
 header .content {
     height: 100%; /* ocupa toda a altura do header */
     width: 94vw;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,19 +25,19 @@ header .content {
 header .content ul{
     
     list-style: none; /* removendo o pontinho da lista */
-    display: flex;
+    display: flex; /* Deixando os itens alinhados */
     
 }
 
 header .content ul li {
-    margin-left: 30px; /* os elementos da lista devem ter um espaçamento entre um e outro */
+    margin-left: 1.8rem; /* os elementos da lista devem ter um espaçamento entre um e outro */
 }
 
 header .content ul li:first-child {
     margin-left: 0; /* o primeiro elemento não deve ter espaçamento */
 }
 
-header .content div.search-bar input{
+header .content div.search-bar input {
     max-width: 340px;
     width: 35vw;
     border: 1px solid #e6ecf0;
@@ -48,21 +46,22 @@ header .content div.search-bar input{
     border-radius: 16px;
     color: #667581;
     font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .icones-header {
     width: 1.5rem; /* 24px */
     height: 1.5rem;
-    color: black;
+    color: rgb(31, 22, 8);
 }
 
 .icones-header:hover {
     cursor: pointer;
 }
 
-@media (max-width:700px) {
-    /* .icones-header {
+@media (max-width:500px) {
+    .icones-header {
         width: 1rem;
         height: 1rem;
-    } */
+    }
 }
